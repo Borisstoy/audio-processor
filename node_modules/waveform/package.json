@@ -1,0 +1,26 @@
+{
+  "name": "waveform",
+  "version": "3.0.1",
+  "description": "simultaneously transcode audio and generate visuals",
+  "keywords": [
+    "fast",
+    "waveform",
+    "png",
+    "waveformjs"
+  ],
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "gypfile": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andrewrk/node-waveform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andrewrk/node-waveform/issues"
+  },
+  "homepage": "https://github.com/andrewrk/node-waveform",
+  "author": "Andrew Kelley <superjoe30@gmail.com>",
+  "license": "MIT",
+  "main": "index.js"
+}
