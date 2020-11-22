@@ -107,7 +107,7 @@ async function downloadFiles (ranges, file) {
         q.push({ range, i }, (err) => { if (err) { console.log(`Error while queuing downloads: ${err}`)}}) 
     })
 }
-1
+
 function mergePeaksFiles () {
     const path = `tmp/part-*.js`
     const output = 'tmp/peaks.json'
@@ -117,7 +117,7 @@ function mergePeaksFiles () {
 
     // Read all peaks parts files
     glob(path, (err, files) => {
-        if(err) { console.log('Cannot read the folder, something goes wrong with glob', err) }
+        if (err) { console.log('Cannot read the folder, something goes wrong with glob', err) }
         
         files.forEach((file, i) => {
             fs.readFile(file, 'utf8', (err, data) => {
